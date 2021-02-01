@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editmemotitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="제목" />
+
+    <EditText
+        android:id="@+id/editmemocontent"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:inputType="textPersonName"
+        android:hint="내용" />
+
+    <CheckBox
+        android:id="@+id/arlamcheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="알람설정하기" />
+
+    <TimePicker
+        android:id="@+id/edittimeset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        >
+
+    </TimePicker>
+</LinearLayout>

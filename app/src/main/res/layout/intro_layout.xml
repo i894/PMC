@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ex1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ex" />
+</LinearLayout>
+<!--wrap_content:내용의 크기에 맞춤.-->
+<!--match_parent:화면의 크기에 맞춤.-->
+<!--fitXY:비율 상관없이 이미지를 늘려줌.(그림이 안잘림)-->
+<!--centerCrop:화면에 맞춤(그림이 잘림)-->
+<!--src="@그림주소"-->

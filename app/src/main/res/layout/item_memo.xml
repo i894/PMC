@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/itemBack"
+        android:layout_width="398dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#e2e2e2"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemtitle"
+        android:layout_width="57dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/itemBack"
+        app:layout_constraintStart_toStartOf="@+id/itemBack"
+        app:layout_constraintTop_toTopOf="@+id/itemBack"
+        app:layout_constraintVertical_bias="0.029"
+        tools:text="제목" />
+
+    <TextView
+        android:id="@+id/itemdate"
+        android:layout_width="47dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/itemcontent"
+        app:layout_constraintEnd_toEndOf="@+id/itemBack"
+        app:layout_constraintTop_toTopOf="@+id/itemBack"
+        app:layout_constraintVertical_bias="0.625"
+        tools:text="날짜" />
+
+    <TextView
+        android:id="@+id/itemplace"
+        android:layout_width="77dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/itemcontent"
+        app:layout_constraintEnd_toEndOf="@+id/itemBack"
+        app:layout_constraintTop_toTopOf="@+id/itemBack"
+        app:layout_constraintVertical_bias="0.363"
+        tools:text="장소" />
+
+    <TextView
+        android:id="@+id/itemtime"
+        android:layout_width="70dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/itemcontent"
+        app:layout_constraintEnd_toEndOf="@+id/itemBack"
+        app:layout_constraintTop_toTopOf="@+id/itemBack"
+        app:layout_constraintVertical_bias="0.333"
+        tools:text="시간" />
+
+    <TextView
+        android:id="@+id/itemcontent"
+        android:layout_width="312dp"
+        android:layout_height="103dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemBack"
+        app:layout_constraintEnd_toEndOf="@+id/itemBack"
+        tools:text="내용" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
